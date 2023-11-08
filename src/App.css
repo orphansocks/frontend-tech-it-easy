@@ -1,0 +1,76 @@
+.sales-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: lightyellow;
+    padding: 30px;
+}
+
+    .title-container {
+        flex-grow: 0;
+        flex-shrink: 1;
+        padding: 0;
+        text-align: left;
+        background-color: burlywood;
+    }
+
+    .featured-dashboard-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        column-gap: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 20px 0;
+        background-color: pink;
+    }
+
+    .field {
+        flex-basis: 200px;
+        text-align: center;
+        padding: 50px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-color: lightgrey;
+        border: 1px solid var(--lightgrey);
+    }
+
+    .field__green {
+        flex-direction: column;
+        flex-basis: 200px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-color: var(--greentransparant);
+        border: 1px solid var(--green);
+    }
+
+    .field__blue {
+        flex-direction: column;
+        flex-basis: 200px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-color: var(--bluetransparant);
+        border: 1px solid var(--blue);
+    }
+
+    .field__red {
+        flex-direction: column;
+        flex-basis: 200px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-color: var(--redtransparant);
+        border: 1px solid var(--red);
+    }
+}
