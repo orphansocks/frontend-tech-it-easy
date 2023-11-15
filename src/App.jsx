@@ -9,6 +9,7 @@ import returnTvDimensions from "./helpers/returnTvDimensions.js";
 import getTvTypeNames from "./helpers/getTvTypeNames.jsx";
 import getSoldTvs from "./helpers/getSoldTvs.js";
 import showAllTelevisions from "./helpers/showAllTelevisions.jsx";
+import React from "react";
 
 function App() {
     return <>
@@ -55,15 +56,11 @@ function App() {
 
             <section>
                 <h2>Alle televisies</h2>
+                <p>Hier komt de rij met buttons</p>
                 <div className="all-televisions-container">
-                    <p>Hier komt de rij met buttons</p>
-                    <p>Hier komt de lijst met artikelen via helper showAllTelevisions</p>
-                    <p>{showAllTelevisions(inventory)}</p>
-
-
+                    {showAllTelevisions(inventory)}
                 </div>
             </section>
-
 
 
                 <section>

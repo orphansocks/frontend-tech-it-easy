@@ -82,6 +82,7 @@ function App() {
                     </div>
                 </article>
             </section>
+
             <section>
                 <h2>Alle tvs</h2>
                 <button type="button" onClick={sortBestSellers}>

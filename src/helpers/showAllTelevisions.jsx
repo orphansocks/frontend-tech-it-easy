@@ -1,22 +1,25 @@
 import React from "react";
+import returnTvDimensions from "./returnTvDimensions.js";
+import returnBestSellingTv from "./returnBestSellingTv.js";
+import returnTvPrice from "./returnTvPrice.js";
 
 function showAllTelevisions(allTelevisionsArray) {
 
-    allTelevisionsArray.map((tv) => {
-
-        return <article className="all-televisions-article" key={tv.type}>
+    let allTelevisions = allTelevisionsArray.map((tv ) => {
+        return (
+            <article className="all-televisions-article" key={tv.type}>
             <span className="tv-image">
             <img src={tv.sourceImg} alt={tv.name}></img>
             </span>
             <div className="tv-info">
-            <p>{tv.name}</p>
-            <p>'€ '{tv.price},-</p>
-            <p>Hier komen de availableSizes</p>
+            <p className="tv-name">{returnBestSellingTv(tv)}</p>
+                <p className="tv-price">{returnTvPrice(tv.price)}</p>
+                <p className="tv-dimensions">{returnTvDimensions(tv.availableSizes)}</p>
             <p>En hier komen de options</p>
             </div>
-
-        </article>
-    })
+        </article> )
+    });
+    return allTelevisions;
 }
 
 export default showAllTelevisions;
