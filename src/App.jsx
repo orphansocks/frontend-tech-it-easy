@@ -58,6 +58,7 @@ function App() {
             <section>
                 <h2>Beschikbare merken</h2>
                 <ul>{returnAllBrands(inventory)}
+             ç
                 </ul>
             </section>
 
@@ -68,7 +69,6 @@ function App() {
                 <button className="button" type="button">Goedkoopste eerst</button>
                 <button className="button" type="button">Meest geschikt voor sport eerst</button>
                  </span>
-
                 <div className="all-televisions-container">
                     {showAllTelevisions(inventory)}
                 </div>

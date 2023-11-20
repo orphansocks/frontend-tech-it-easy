@@ -2,6 +2,7 @@ import React from "react";
 import returnTvDimensions from "./returnTvDimensions.js";
 import returnBestSellingTv from "./returnBestSellingTv.js";
 import returnTvPrice from "./returnTvPrice.js";
+import returnTvOptions from "./returnTvOptions.jsx";
 
 function showAllTelevisions(allTelevisionsArray) {
 
@@ -15,7 +16,7 @@ function showAllTelevisions(allTelevisionsArray) {
             <p className="tv-name">{returnBestSellingTv(tv)}</p>
                 <p className="tv-price">{returnTvPrice(tv.price)}</p>
                 <p className="tv-dimensions">{returnTvDimensions(tv.availableSizes)}</p>
-            <p>[check-icon] wifi [not-icon] speech [check-icon] hdr [check-icon] bluetooth [not-icon] ambilight</p>
+            <p className="tv-options">{returnTvOptions(tv.options)}</p>
             </div>
         </article> )
     });
