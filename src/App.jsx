@@ -10,6 +10,7 @@ import getTvTypeNames from "./helpers/getTvTypeNames.jsx";
 import getSoldTvs from "./helpers/getSoldTvs.js";
 import showAllTelevisions from "./helpers/showAllTelevisions.jsx";
 import React from "react";
+import returnAllBrands from "./helpers/returnAllBrands.jsx";
 
 function App() {
     return <>
@@ -40,7 +41,7 @@ function App() {
             <section>
                 <h2>Best verkochte tv</h2>
                 <div className="best-selling-container">
-                    <article className="best-selling-article">
+                    <article className="tv-article">
                         <span className="tv-image">
                         <img src={bestSellingTv.sourceImg} alt="tv image"/>
                         </span>
@@ -48,20 +49,30 @@ function App() {
                             <p className="tv-name">{returnBestSellingTv(bestSellingTv)}</p>
                             <p className="tv-price">{returnTvPrice(bestSellingTv.price)}</p>
                             <p className="tv-dimensions">{returnTvDimensions(bestSellingTv.availableSizes)}</p>
+                            <p>[check-icon] wifi [not-icon] speech [check-icon] hdr [check-icon] bluetooth [not-icon] ambilight</p>
                         </div>
                     </article>
                 </div>
             </section>
 
+            <section>
+                <h2>Beschikbare merken</h2>
+                <ul>{returnAllBrands(inventory)}
+                </ul>
+            </section>
 
             <section>
                 <h2>Alle televisies</h2>
-                <p>Hier komt de rij met buttons</p>
+             <span>
+                <button className="button" type="button">Meest verkocht eerst</button>
+                <button className="button" type="button">Goedkoopste eerst</button>
+                <button className="button" type="button">Meest geschikt voor sport eerst</button>
+                 </span>
+
                 <div className="all-televisions-container">
                     {showAllTelevisions(inventory)}
                 </div>
             </section>
-
 
                 <section>
                 <h2>Oefenen met array methodes</h2>

@@ -7,7 +7,7 @@ function showAllTelevisions(allTelevisionsArray) {
 
     let allTelevisions = allTelevisionsArray.map((tv ) => {
         return (
-            <article className="all-televisions-article" key={tv.type}>
+            <article className="tv-article" key={tv.type}>
             <span className="tv-image">
             <img src={tv.sourceImg} alt={tv.name}></img>
             </span>
@@ -15,7 +15,7 @@ function showAllTelevisions(allTelevisionsArray) {
             <p className="tv-name">{returnBestSellingTv(tv)}</p>
                 <p className="tv-price">{returnTvPrice(tv.price)}</p>
                 <p className="tv-dimensions">{returnTvDimensions(tv.availableSizes)}</p>
-            <p>En hier komen de options</p>
+            <p>[check-icon] wifi [not-icon] speech [check-icon] hdr [check-icon] bluetooth [not-icon] ambilight</p>
             </div>
         </article> )
     });
