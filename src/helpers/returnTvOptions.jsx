@@ -1,6 +1,6 @@
 function returnTvOptions(optionsArray) {
     let tvOptions = optionsArray.map((option) => {
-        if (option.applicable === true) {
+        if (option.applicable) {
             return <li><img src="src/assets/check.png" alt="icon-check" className="option-icon"/> {option.name}</li>
         }
         else {
