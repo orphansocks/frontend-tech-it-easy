@@ -1,0 +1,136 @@
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.featured-dashboard-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.dashboard-item {
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+    .field__green {
+        color: var(--green);
+        background-color: var(--greentransparant);
+        border: 1px solid var(--green);
+    }
+
+    .field__blue {
+       color: var(--blue);
+        background-color: var(--bluetransparant);
+        border: 1px solid var(--blue);
+    }
+
+    .field__red {
+        color: var(--red);
+        background-color: var(--redtransparant);
+        border: 1px solid var(--red);
+    }
+
+    .product-price {
+        font-size: 21px;
+    }
+
+.button {
+    background-color: lightgrey;
+    border: 1px dashed var(--zwart);
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.tv-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 30px;
+    padding: 20px 20px;
+    margin: 0;
+    border: 1px dashed var(--zwart);
+    border-radius: 4px;
+    background-color: lightgrey;
+    max-width: 1200px;
+}
+
+.tv-image {
+   flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.tv-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tv-name{
+    font-size: 21px;
+    font-weight: 400;
+}
+.tv-price {
+    font-size: 48px;
+    font-weight: 500;
+}
+.tv-dimensions {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.tv-options {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding-left: 0;
+    list-style: none;
+    }
+
+    .tv-options img {
+        margin-right: 4px;
+    }
+
+.option-icon {
+    width: 12px;
+}
+
+.all-televisions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 15px;
+    margin-top: 15px;
+}
+
+
+

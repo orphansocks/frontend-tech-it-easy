@@ -6,9 +6,38 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --zwart: #0C0C0C;
+  --wit: #ffffff;
+  --green: rgb(72, 169, 166);
+  --greentransparant: rgb(72, 169, 166, 0.3);
+  --blue: rgb(63, 90, 199);
+  --bluetransparant: rgb(63, 90, 199, 0.3);
+  --red: rgb(193, 102, 107);
+  --redtransparant: rgb(193, 102, 107, 0.3);
+  --lightgrey: #E4DFDA;
 }
 
 body {
   font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+ /*---------- 1.0 Layout ----------*/
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */]
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
 }
